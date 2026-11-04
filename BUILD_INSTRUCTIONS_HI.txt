@@ -1,0 +1,26 @@
+LOVE – All-in-One Android Project (v2.0)
+
+इस प्रोजेक्ट में Normal और Master दोनों स्क्रीन को एक ही LOVE ऐप में मिला दिया गया है।
+ऐप में Home, Profile, Chats, Voice/Video Call screen, Stories/Status, Family,
+Events, Memories, Master Dashboard और Settings शामिल हैं।
+
+डेमो में प्रोफाइल, चैट नोट्स, स्टोरी टेक्स्ट, परिवार के सदस्य, इवेंट और यादें
+इसी फोन के लोकल स्टोरेज में सेव होते हैं।
+
+APK बनाने के लिए:
+1. ZIP को कंप्यूटर पर Extract करें।
+2. Android Studio खोलें और इस फोल्डर को Open करें।
+3. Gradle Sync पूरा होने दें और Android SDK Platform 35 इंस्टॉल करें।
+4. Build > Build Bundle(s) / APK(s) > Build APK(s) चुनें।
+5. APK app/build/outputs/apk/debug/app-debug.apk में मिलेगी।
+
+सीमाएँ:
+- इस चैट के वातावरण में Android SDK/Gradle build उपलब्ध नहीं है, इसलिए APK compile नहीं की गई।
+- चैट अभी लोकल डेमो है; दूसरे लोगों को संदेश भेजने/पाने के लिए सुरक्षित backend,
+  user authentication, database और realtime messaging चाहिए।
+- Voice/Video buttons अभी डेमो हैं; असली इंटरनेट कॉल के लिए WebRTC या कॉलिंग सेवा,
+  signaling server और permissions चाहिए।
+- Stories को 24 घंटे में expire करना, cloud photo/video, push notifications,
+  cross-device family sync और master role permissions के लिए backend जरूरी है।
+- किसी दूसरे डिवाइस को जोड़ने में स्पष्ट सहमति और वैध permissions जरूरी हैं।
+- यह build अभी एकीकृत Android shell + स्थानीय demo features है, पूर्ण production service नहीं।
